@@ -30,5 +30,32 @@ def binary_search(list, item):
 my_list = [1, 3, 5, 7, 9]
 
 # value we are looking for 
-print(binary_search(my_list, 3)) # returns 1(this is the index position of the value we're looking for in the list)
-print(binary_search(my_list, -1)) # this value is not found in the list so it returns none
+#print(binary_search(my_list, 3)) # returns 1(this is the index position of the value we're looking for in the list)
+#print(binary_search(my_list, -1)) # this value is not found in the list so it returns none
+
+#print(binary_search(my_list, 5)) # value is found in list at index position 2 so that's what it will return
+
+"""
+
+Exercise 1 - If you have a sorted list of 128 names and you're searching through it using binary search, what's the maximum number of steps it would take 
+
+Answer is 7
+
+log128 = log(2)128 == 2^7 or 2 * 2 * 2 * 2 * 2 * 2 * 2 = 128
+
+Solution is 7 
+
+"""
+
+# in a list of 128 values, find index position of 5, else return null
+print(binary_search(range(128), 5)) 
+
+
+"""
+if you double the size of the list, what's the maximum number of steps now?
+
+log256 == log(2)256 == 2^8 == 256
+
+It would take 8 steps 
+
+"""
