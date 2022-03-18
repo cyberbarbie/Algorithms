@@ -48,7 +48,11 @@ Solution is 7
 """
 
 # in a list of 128 values, find index position of 5, else return null
-print(binary_search(range(128), 5)) 
+
+print(binary_search(range(128), 5)) #
+
+# in a list of 128, values find value 128 (doesnt exist because lists in python are zero indexed, meaning highest posssible index is actually 127)
+print(binary_search(range(128), 128)) # answer is None
 
 
 """
